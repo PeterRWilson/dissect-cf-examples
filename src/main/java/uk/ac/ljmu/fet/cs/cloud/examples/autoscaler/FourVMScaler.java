@@ -21,7 +21,7 @@ public class FourVMScaler extends VirtualInfrastructure {
 			final String kind = kinds.next();
 			final ArrayList<VirtualMachine> vmset = vmSetPerKind.get(kind);
 			if (vmset.size() > 0) {
-				if (vmset.size() < 3) {
+				if (vmset.size() < 1) {
 					requestVM(kind);
 				}
 			} else if (vmset.isEmpty()) {
