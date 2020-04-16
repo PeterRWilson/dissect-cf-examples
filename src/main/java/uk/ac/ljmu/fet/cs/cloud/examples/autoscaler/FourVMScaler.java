@@ -15,7 +15,7 @@ public class FourVMScaler extends VirtualInfrastructure {
 
 	@Override
 	public void tick(long fires) {
-		// a list of all the applications that need a virtual infrastructure
+		// checks a list of all the applications that need a virtual infrastructure
 		final Iterator<String> kinds = vmSetPerKind.keySet().iterator();
 		while (kinds.hasNext()) {
 			final String kind = kinds.next();
